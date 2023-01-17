@@ -1,11 +1,15 @@
+import Input from "../components/Input"
 import React from 'react'
-import Form from '../components/Form'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const Home = () => {
   return (
-    <>
-      <Form/>
-    </>
+    <HelmetProvider>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+      <Input/>
+    </HelmetProvider>
   )
 }
 
